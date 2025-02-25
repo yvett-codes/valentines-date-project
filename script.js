@@ -1,12 +1,17 @@
+let clickCounter = 0;
+
 function startDate() {
-    console.log("Let's go on a date!");
-    const element = document.getElementById("dateButton");
-    element.style.backgroundColor = "green";
-    element.textContent = "EEK";
+    const button = document.getElementById("dateButton");
+    // button.addEventListener('click', doSomething);
+    clickCounter++;
+    button.textContent = buttonMessages[clickCounter];
+}
+
+function doSomething() {
+    alert("Hello, world!")
 }
 
 const buttonMessages = [
-    "💗 Let's go! 💗",
     "Strawberry Fields",
     "Cake Outfit",
     "Girl, you are the strawberry of my eye.",
