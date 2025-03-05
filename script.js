@@ -1,4 +1,4 @@
-let clickCounter = 0;
+let clickCounter = -1;
 
 function startDate() {
     const button = document.getElementById("dateButton");
